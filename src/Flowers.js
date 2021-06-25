@@ -10,4 +10,5 @@ export function Flowers() {
     <p>Bears flowers of the most perfect formation – shallow cups of the purest mid pink. They flower very freely from early summer until well into the autumn and have a strong, pure Old Rose fragrance. </p>,
     <img src="C:\Users\Dell\Desktop\my--first-react-app\public\images\HARLOW CARR.jpg" alt="HARLOW CARR.jpg"></img>]
 
+    
 };
