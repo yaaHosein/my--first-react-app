@@ -1,5 +1,5 @@
 import { useState } from "react/cjs/react.production.min"
-export const Collapsable = () => {
+export const Flowers = () => {
     let [isShow, setIsShow] = useState(true);
     let buttonText = "";
     if (isShow) {
