@@ -1,6 +1,5 @@
 import './App.css';
 import { Flowers } from "./Flowers";
-import { Collapsable } from "./Collapsable"
 function App() {
     return (
         <div className="App">
