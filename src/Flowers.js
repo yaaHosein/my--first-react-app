@@ -1,33 +1,24 @@
-import { useState } from "react/cjs/react.production.min"
-export const Flowers = () => {
+import { useState } from "react"
+export function Flowers(props) {
     let [isShow, setIsShow] = useState(true);
-    let buttonText = "";
+    let buttonText = null;
     if (isShow) {
         buttonText = "Hide"
     } else {
         buttonText = "Show"
     }
-    return
-    <div>
+    return (<div>
         <button
             onClick={() => {
                 setIsShow(!isShow);
-            }}
-        >
+            }}>
             {buttonText}
         </button>
         {isShow && (
-            <p>
-                "A magnificent variety, bearing large, many petalled rosette blooms. They are a striking shade of deep pink, the outer petals of each bloom paling slightly over time. The beauty of the blooms is enhanced by a wonderful, strong fruity fragrance."
-            </p>
-        )};F
+            <p>{props.description}</p>
+        )};
 
-    </div >
-};
-export function Flowers(props) {
-    return <>
         <h3>{props.title}</h3>
-        <p>{props.description}</p>
         <img src={props.imageSource} alt={props.imageName} />
-    </>
-};
+    </div >)
+}
