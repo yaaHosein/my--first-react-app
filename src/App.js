@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 import './App.css';
 import { Flowers } from "./Flowers";
 import data from "./data.json";
@@ -31,6 +29,4 @@ export default App;
 
 
 
-
->>>>>>> 7989072300765d546d836b662272941382c51ad3
 
