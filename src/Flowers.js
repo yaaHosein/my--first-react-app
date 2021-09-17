@@ -16,6 +16,7 @@ export function Flowers(props) {
         </button>
         {isShow && (
             <p>{props.description}</p>
+            {items}
         )};
 
         <h3>{props.title}</h3>
