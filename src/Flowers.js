@@ -16,10 +16,15 @@ export function Flowers(props) {
         </button>
         {isShow && (
             <p>{props.description}</p>
-            {items}
+
+        )};
+        {isShow && (
+            <h3>{props.title}</h3>
+
+        )};
+        {isShow && (
+            <img src={props.imageSource} alt={props.imageName} />
         )};
 
-        <h3>{props.title}</h3>
-        <img src={props.imageSource} alt={props.imageName} />
     </div >)
 }
