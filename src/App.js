@@ -10,21 +10,22 @@ function App() {
             <Flowers title="HARLOW CARR" description="Bears flowers of the most perfect formation – shallow cups of the purest mid pink. They flower very freely from early summer until well into the autumn and have a strong, pure Old Rose fragrance." imageSource="/images/HARLOW CARR.jpg" imageName="HARLOW CARR" />
         </div>
     );
+    const items = data.map(function (item) {
+        return
+        <Flowers
+            title={item.title}
+            description={item.description}
+            imagePath={item.imagePath}
+        />
+        return (
+            <div>
+                {items}
+            </div>
+        )
+    });
 
 }
-const items = data.map(function (item) {
-    return
-    <Flowers
-        title={item.title}
-        description={item.description}
-        imagePath={item.imagePath}
-    />
-    return (
-        <div>
-            {items}
-        </div>
-    )
-});
+
 export default App;
 
 
